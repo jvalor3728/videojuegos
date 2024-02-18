@@ -1,0 +1,361 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+ 
+    background: #76a866;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, hsla(241, 48%, 27%, 0.295), #A5CC82), url(../juegos-img/portada2.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, hsla(241, 48%, 27%, 0.295), #A5CC82), url(../juegos-img/portada2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width: 100%;
+    height: 1000px;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav> a {
+    color: white;
+    font-weight: 300%;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav> a:hover {
+
+    text-decoration:underline;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.titulosprin h1{
+    font-size: 50px;
+    color: #f8fdf3;
+}
+
+.titulosprin h1{
+    font-size: 70px;
+    color:#f8fdf3;
+}
+
+.titulosprin p{
+    font-size: 40px;
+    font-weight: 300;
+    color: #f8fdf3;
+}
+
+
+
+header .titulosprin{
+    display: flex;
+    height:  430px;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/*main*/
+
+/*Galeria */
+.Destacados{ /*esta clase  juntas el pie de pagian con el encabezado*/
+    background: #fff;
+}
+
+/*categorias*/
+.categoria {
+    background: #fff;
+}
+ 
+.galeria-cate {
+ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ 
+}
+ 
+.imagen-cate {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 6px 0 rgba(118, 187, 97, 0.945);
+}
+ 
+.imagen-cate >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(93, 47%, 60%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.hover-galeria img {
+    width: 50px;
+}
+ 
+.hover-galeria p {
+  color: #fff;
+}    
+ 
+.imagen-cate:hover .hover-galeria {
+        transform: scale(1);
+}
+/*destacados*/
+.titulo{
+    color:  #A5CC82;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulos{
+    color:  #b1ce97;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imagen{
+    width: 350px;
+    margin-left: 50px;
+    margin: 0;
+    display: block; /*el (display y margin) me centra las imagenes*/
+    margin: 0 auto;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow:hidden;
+}
+
+.juego{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.juego .imagen{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido-textos h3 span{
+    background: #76a866;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-sizing: 0 0 6px rgba(0,0,0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenido{
+    flex: 1;
+    padding-right: 20px ;
+}
+
+
+/*noticias*/
+.post-line{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;   
+}
+
+
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.titu{
+    color:  #b1ce97;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+   
+}
+
+
+.post-img-1{
+    background: url(../juegos-img/spencer.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-2{
+    background: url(../juegos-img/activison.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-3{
+    background: url(../juegos-img/Epic\ Games\ \ \(1\).jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    box-shadow: 0 1px 6xp 1xp rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 6xp 1xp rgba(0, 0, 0, .15);
+}
+
+.post-header{
+    width: 100%;
+    height: 200px;
+   /* overflow: hidden;*/
+   cursor: pointer;
+}
+
+.post-img-1
+.post-img-2
+.post-img-3{
+transform: scale(1.1);
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post-body h2{
+    margin-bottom: 15px;
+}
+
+.post-body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #2b6ebb;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2 px 6px 1px rgba(0, 0, 0, 1);
+    transition: .2s;
+}
+
+.post-body .post-link:hover{
+    background: #A5CC82;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 2);
+    transform: translateY(-2px);
+}
+/*#3378c7*/
+/*footer*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #A5CC82;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
